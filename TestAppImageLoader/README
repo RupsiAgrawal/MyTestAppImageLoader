@@ -20,5 +20,5 @@ scrolls through the grid. Fetch the images in batches from the API to optimize p
 
 Permissions: Request necessary permissions, such as internet access and storage permissions, in the AndroidManifest.xml
 
-By following these steps, you should be able to develop an Android application that efficiently loads and displays images in a
+By following these steps, we should be able to develop an Android application that efficiently loads and displays images in a
 scrollable grid without using any third-party image loading library.
