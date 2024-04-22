@@ -1,0 +1,24 @@
+Layout: Design a layout for your activity containing a RecyclerView to display the image grid. Each item in the grid will contain an ImageView to display the images.
+
+RecyclerView Adapter: Create a custom adapter for the RecyclerView to manage the items in the grid.
+This adapter will inflate the item layout and bind the data (images) to the ImageView in each grid item.
+
+Image Loading: Implement asynchronous image loading using the provided URL and the formula to construct the image URL using fields of the thumbnail object.
+You can use Kotlin's coroutines for asynchronous loading. When fetching the images from the API, construct the image URL using the provided formula
+and load the image into the ImageView.
+
+Caching Mechanism: Develop a caching mechanism to store images retrieved from the API in both memory and disk cache. You can use the following approaches:
+
+In-memory cache: Use a LruCache or a Map to cache images in memory.
+Disk cache: Save images to the device's internal storage using File or Room database.
+
+Error Handling: Handle network errors and image loading failures gracefully. Display informative error messages or placeholders for failed image loads.
+You can use try-catch blocks to handle exceptions during image loading and display error messages to the user.
+
+Scrollable Grid: Ensure that the grid is scrollable and displays at least 100 images. You can achieve this by dynamically loading more images as the user
+scrolls through the grid. Fetch the images in batches from the API to optimize performance and memory usage.
+
+Permissions: Request necessary permissions, such as internet access and storage permissions, in the AndroidManifest.xml
+
+By following these steps, we should be able to develop an Android application that efficiently loads and displays images in a
+scrollable grid without using any third-party image loading library.
